@@ -9,7 +9,9 @@ Task:
 Given the start and end letterbox numbers, write a method to return the frequency of all 10 digits painted.
 """
 
-from timeit import default_timer
+from timeit import default_timer as timer
+
+from exec_time import display_function_execution_time as elapsed
 
 
 def paint_letterboxes(start, finish):
@@ -28,15 +30,13 @@ def paint_letterboxes_alt(start, finish):  # more efficient
     return lst
 
 
-# testing task (kata) https://www.codewars.com/kata/597d75744f4190857a00008d
-time_s = default_timer()
+# test of task (kata) https://www.codewars.com/kata/597d75744f4190857a00008d
+time_s = timer()
 print(paint_letterboxes(125, 132))  # test, expected: [1,9,6,3,0,1,1,1,1,1]
-time_f = default_timer()
-execution_time_us = (time_f - time_s) * 1000000
-print(f"Execution time: {execution_time_us:.2f} microseconds")
+time_f = timer()
+elapsed(time_s, time_f)
 print('----')
-time_s = default_timer()
+time_s = timer()
 print(paint_letterboxes_alt(125, 132))  # test, expected: [1,9,6,3,0,1,1,1,1,1]
-time_f = default_timer()
-execution_time_us = (time_f - time_s) * 1000000
-print(f"Execution time: {execution_time_us:.2f} microseconds")
+time_f = timer()
+elapsed(time_s, time_f)
