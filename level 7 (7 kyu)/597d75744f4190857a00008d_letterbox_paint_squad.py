@@ -28,21 +28,15 @@ def paint_letterboxes_alt(start, finish):  # more efficient
     return lst
 
 
-# test of task (kata) https://www.codewars.com/kata/597d75744f4190857a00008d
+# testing task (kata) https://www.codewars.com/kata/597d75744f4190857a00008d
 time_s = default_timer()
-
-print(paint_letterboxes(125, 132))  # [1,9,6,3,0,1,1,1,1,1]
-
+print(paint_letterboxes(125, 132))  # test, expected: [1,9,6,3,0,1,1,1,1,1]
 time_f = default_timer()
 execution_time_us = (time_f - time_s) * 1000000
 print(f"Execution time: {execution_time_us:.2f} microseconds")
-
 print('----')
-
 time_s = default_timer()
-
-print(paint_letterboxes_alt(125, 132))  # [1,9,6,3,0,1,1,1,1,1]
-
+print(paint_letterboxes_alt(125, 132))  # test, expected: [1,9,6,3,0,1,1,1,1,1]
 time_f = default_timer()
 execution_time_us = (time_f - time_s) * 1000000
 print(f"Execution time: {execution_time_us:.2f} microseconds")
