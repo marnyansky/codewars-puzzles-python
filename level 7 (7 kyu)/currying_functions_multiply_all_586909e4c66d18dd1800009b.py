@@ -5,6 +5,8 @@ This function must return another function, which takes a single integer as an a
 The returned list should consist of each of the elements from the first list multiplied by the integer.
 Example: multiply_all([1, 2, 3])(2); // => [2, 4, 6]
 You must not mutate the original list.
+
+Hint: function currying: https://stackoverflow.com/questions/24881604/when-should-i-use-function-currying-in-python
 """
 
 from timeit import default_timer as timer
