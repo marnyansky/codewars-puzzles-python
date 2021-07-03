@@ -1,8 +1,7 @@
 """
-Different implementations of quicksort sorting algorithm:
+Different implementations of quicksort number sorting algorithm:
 quicksort1: book "Grokking algorithms" by A.Bhargava - chapter 4, page 92
 mergesortish_quicksort: StackOverflow v01: https://stackoverflow.com/posts/18262384/revisions
-
 """
 
 from timeit import default_timer as timer
