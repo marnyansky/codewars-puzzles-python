@@ -1,3 +1,4 @@
+# TODO: add approx. complexity value for each algorithm
 # TODO: merge_sort
 # TODO: selection_sort (classic)
 # TODO: further sorting algorithms from "Grokking algorithms" by A.Bhargava
