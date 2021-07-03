@@ -1,3 +1,7 @@
+# TODO: merge_sort
+# TODO: selection_sort (classic)
+# TODO: further sorting algorithms from "Grokking algorithms" by A.Bhargava
+
 """
 Multiple sorting algorithms compete with each other:
 A. mergesortish_quicksort: StackOverflow v01: https://stackoverflow.com/posts/18262384/revisions
