@@ -16,12 +16,22 @@ from timeit import default_timer as timer
 from exec_time import display_function_execution_time as elapsed
 
 
+# generates random list of emails
 def _generate_list_emails(num_emails):
     lst_emails = []
     for _ in range(num_emails):
         new_random_email = f"{choice(al)}.test{randint(0, 10)}@{choice(al)}.com"  # example: j.test1@p.com, allow duplicates
         lst_emails.append(new_random_email)
     return lst_emails
+
+
+# selection sort helper
+def _find_min_value(raw_lst):
+    min_value = raw_lst[0]
+    for next_value in raw_lst:
+        if next_value < min_value:
+            min_value = next_value
+    return min_value
 
 
 # A
@@ -52,14 +62,6 @@ def quicksort_book(lst):
     less = [i for i in lst[1:] if i <= pivot]
     greater = [i for i in lst[1:] if i > pivot]
     return quicksort_book(less) + [pivot] + quicksort_book(greater)
-
-
-def _find_min_value(raw_lst):
-    min_value = raw_lst[0]
-    for next_value in raw_lst:
-        if next_value < min_value:
-            min_value = next_value
-    return min_value
 
 
 # C
