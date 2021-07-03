@@ -100,7 +100,7 @@ def timsort(lst):
 unsorted_lst = _generate_list_emails(10_000)
 
 """Tests:"""
-print(f"Sorting of {len(unsorted_lst)} random emails...")
+print(f"Sorting a list of {len(unsorted_lst)} random emails...")
 
 print("A. Quicksort in merge sort style \t", end=" ")
 sleep(1)
@@ -138,7 +138,6 @@ time_f = timer()
 elapsed(time_s, time_f)
 
 
-"""
 print("E. Bubble sort \t", end=" ")
 sleep(1)
 time_s = timer()
@@ -146,7 +145,6 @@ sorted_lst_e = bubble_sort(unsorted_lst.copy())
 # print(*sorted_lst_e, sep=" ")
 time_f = timer()
 elapsed(time_s, time_f)
-"""
 
 
 print("F. Python's TimSort \t", end=" ")
